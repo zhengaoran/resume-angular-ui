@@ -1,0 +1,21 @@
+<li nz-submenu nzOpen class="submenu education" nzTitle="Education" nzIcon="profile">
+  <ul>
+    <li *ngFor="let info of education" class="education-item" nz-menu-item>
+      <nz-layout>
+        <nz-sider nzWidth="110px">
+          <b>{{info.label}}</b>
+        </nz-sider>
+        <nz-content *ngIf="info.label !== 'Course Work'; else courseWork">
+          <span>{{info.value}}</span>
+        </nz-content>
+        <ng-template #courseWork>
+          <nz-content>
+            <nz-tag *ngFor="let tag of info.value" [nzColor]="'processing'">
+              <span nz-popover nzPopoverPlacement="topCenter" [nzPopoverContent]="tag">{{tag}}</span>
+            </nz-tag>
+          </nz-content>
+        </ng-template>
+      </nz-layout>
+    </li>
+  </ul>
+</li>

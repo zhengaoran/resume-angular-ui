@@ -1,0 +1,11 @@
+<li nz-submenu nzOpen class="submenu work-history" nzTitle="Work History" nzIcon="history">
+  <ul>
+    <li nz-menu-item>
+      <nz-timeline>
+        <nz-timeline-item *ngFor="let work of workHistory; let i = index" [nzColor]="i === 0 ? 'green' : 'blue'">
+          <app-work-details [work]="work"></app-work-details>
+        </nz-timeline-item>
+      </nz-timeline>
+    </li>
+  </ul>
+</li>

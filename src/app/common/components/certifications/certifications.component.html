@@ -1,0 +1,14 @@
+<li nz-submenu nzOpen class="submenu certifications" nzTitle="Certifications" nzIcon="book">
+  <ul>
+    <li *ngFor="let certification of certifications" nz-menu-item>
+      <ng-container *ngIf="certification.link; else textOnly">
+        <a [href]="certification.link" target="_blank">
+          {{certification.name}}
+        </a>
+      </ng-container>
+      <ng-template #textOnly>
+        <span>{{certification.name}}</span>
+      </ng-template>
+    </li>
+  </ul>
+</li>

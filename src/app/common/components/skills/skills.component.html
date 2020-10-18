@@ -1,0 +1,13 @@
+<ul *ngFor="let category of skillSet" nz-menu nzMode="inline" class="sider-menu">
+  <li nz-submenu nzOpen class="submenu" [nzTitle]="category.title" [nzIcon]="category.icon">
+    <ul>
+      <li *ngFor="let skill of category.skills" nz-menu-item>
+        <nz-layout>
+          <nz-content>
+            <span>{{skill}}</span>
+          </nz-content>
+        </nz-layout>
+      </li>
+    </ul>
+  </li>
+</ul>

@@ -1,0 +1,16 @@
+<ul nz-menu nzMode="inline" class="sider-menu">
+  <li nz-submenu nzOpen class="submenu" nzTitle="Contact" nzIcon="idcard">
+    <ul>
+      <li *ngFor="let info of contact" nz-menu-item>
+        <nz-layout>
+          <nz-sider nzWidth="70px">
+            <b>{{info.label}}</b>
+          </nz-sider>
+          <nz-content>
+            {{info.value}}
+          </nz-content>
+        </nz-layout>
+      </li>
+    </ul>
+  </li>
+</ul>

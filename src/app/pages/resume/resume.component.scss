@@ -1,0 +1,43 @@
+p {
+  margin: 0 20px;
+  white-space: break-spaces;
+}
+
+.content {
+  padding: 24px 24px;
+}
+
+ul + ul {
+  margin-top: 10px;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: #fff !important;
+}
+
+.timeline {
+  margin: 0 20px;
+}
+
+.work-detail {
+  width: 100%;
+}
+
+.right-content {
+  margin-left: 20px;
+  padding-left: 20px;
+  margin-right: 20px;
+}
+
+.course {
+  margin-right: 10px;
+}
+
+.project-table {
+  margin: 0 24px;
+}
+
+.resume-main-layout {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

@@ -1,0 +1,25 @@
+<li nz-submenu nzOpen class="submenu projects" nzTitle="Projects" nzIcon="project">
+  <div class="project-table">
+    <nz-table #nzTable [nzData]="projects" nzTableLayout="fixed" [nzPageSize]="5">
+      <thead>
+        <tr>
+          <th nzWidth="50px"></th>
+          <th nzWidth="250px">Name</th>
+          <th>Technologies</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let data of nzTable.data">
+          <tr>
+            <td [nzExpand]="expandSet.has(data.id)" (nzExpandChange)="onExpandChange(data.id, $event)"></td>
+            <td>{{ data.name }}</td>
+            <td>{{ data.technologies }}</td>
+          </tr>
+          <tr [nzExpand]="expandSet.has(data.id)">
+            <span class="project-desc">{{ data.description }}</span>
+          </tr>
+        </ng-container>
+      </tbody>
+    </nz-table>
+  </div>
+</li>

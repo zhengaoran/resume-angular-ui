@@ -1,0 +1,93 @@
+/* You can add global styles to this file, and also import other style files */
+.submenu {
+  font-size: 18px;
+  font-weight: 500;
+
+  .ant-menu-submenu-title i {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+.resume {
+  .ant-menu-inline {
+    border-right: 0px;
+  }
+
+  .work-history {
+    .ant-menu-item {
+      height: max-content;
+    }
+  }
+  
+  .ant-menu-item::after {
+    border-right-color: #fff;
+  }
+
+  .ant-list-bordered.ant-list-sm .ant-list-item {
+    white-space: normal;
+  }
+
+  .ant-menu-sub  {
+    overflow: hidden !important;
+  }
+}
+
+.submenu {
+  .ant-menu-item {
+    padding-left: 52px !important;
+    cursor: default !important;
+
+    color: rgba(0, 0, 0, 0.85);
+
+    &:active {
+      background-color: #fff;
+    }
+  }
+}
+
+.ant-menu-submenu {
+  color: #1890ff;
+}
+
+.ant-menu-submenu-title {
+  color: #1890ff !important;
+
+  .ant-menu-submenu-arrow::before, .ant-menu-submenu-arrow::after {
+    background: linear-gradient(to right, #1890ff, #1890ff) !important;
+  }
+}
+
+.ant-timeline-item-tail, .ant-timeline-item-head {
+  margin-top: 2px;
+}
+
+.ant-timeline-item-last > .ant-timeline-item-content {
+  min-height: 0px;
+}
+
+.work-detail-modal .ant-modal-body {
+  padding-top: 10px;
+}
+
+.ant-modal-title {
+  font-size: 20px;
+}
+
+.projects .ant-table-expanded-row td {
+  padding-left: 66px ;
+}
+
+.resume {
+  nz-layout, nz-sider {
+    background: #fff;
+  }
+
+  nz-content + nz-content {
+    margin-top: 15px;
+  }
+
+  .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: #fff !important;
+  }
+}

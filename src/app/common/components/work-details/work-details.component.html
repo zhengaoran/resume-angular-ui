@@ -1,0 +1,19 @@
+<div class="work">
+  <div class="work-title" (click)="toggleModal(true)">
+    <h3>{{work.title}} ({{work.time}}) <i class="open-modal-icon" nz-icon nzType="plus-circle" nzTheme="twotone"></i>
+    </h3>
+  </div>
+  <span>{{work.company}}</span>
+</div>
+
+<nz-modal nzClassName="work-detail-modal" [(nzVisible)]="showModal" [nzTitle]="work.title" [nzFooter]="null" (nzOnCancel)="toggleModal(false)">
+  <div class="work-info">
+    <div>{{work.company}}</div>
+    <div>{{work.time}}</div>
+  </div>
+  <nz-list class="work-detail" nzBordered nzSize="small">
+    <nz-list-item *ngFor="let detail of work.details">
+      {{detail}}
+    </nz-list-item>
+  </nz-list>
+</nz-modal>

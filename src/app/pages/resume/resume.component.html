@@ -1,0 +1,141 @@
+<nz-layout class="resume content">
+  <nz-content>
+    <article nz-typography>
+      <h1 nz-typography>Aoran Zheng</h1>
+      <h4 nz-typography>Software Engineer</h4>
+      <p nz-typography>
+        {{
+          '\tInnovative Software Engineer with over 3 years of experience in developing web applications. Proven
+          experience developing websites using HTML, CSS and JavaScript, and seasoned expert in frontend
+          technologies such as Angular and React. Built products that meet the highest standards for web design,
+          user experience, best practices and performance. Motivated to learn, grow, and excel in Software
+          Engineering.'
+        }}
+      </p>
+    </article>
+  </nz-content>
+  <nz-content>
+    <nz-layout class="resume-main-layout">
+      <nz-sider nzWidth="30%">
+        <app-contact [contact]="contact"></app-contact>
+        <!-- <ul nz-menu nzMode="inline" class="sider-menu">
+          <li nz-submenu nzOpen class="submenu" nzTitle="Contact" nzIcon="idcard">
+            <ul>
+              <li *ngFor="let info of contact" nz-menu-item>
+                <nz-layout>
+                  <nz-sider nzWidth="70px">
+                    <b>{{info.label}}</b>
+                  </nz-sider>
+                  <nz-content>
+                    {{info.value}}
+                  </nz-content>
+                </nz-layout>
+              </li>
+            </ul>
+          </li>
+        </ul> -->
+
+        <app-skills [skillSet]="skillSet"></app-skills>
+        <!-- <ul *ngFor="let category of skillSet" nz-menu nzMode="inline" class="sider-menu">
+          <li nz-submenu nzOpen class="submenu" [nzTitle]="category.title" [nzIcon]="category.icon">
+            <ul>
+              <li *ngFor="let skill of category.skills" nz-menu-item>
+                <nz-layout>
+                  <nz-content>
+                    <span>{{skill}}</span>
+                  </nz-content>
+                </nz-layout>
+              </li>
+            </ul>
+          </li>
+        </ul> -->
+      </nz-sider>
+      <nz-content class="right-content">
+        <nz-layout>
+          <ul nz-menu nzMode="inline" class="sider-menu">
+            <app-work-history [workHistory]="workHistory"></app-work-history>
+            <!-- <li nz-submenu nzOpen class="submenu work-history" nzTitle="Work History" nzIcon="history">
+              <ul>
+                <li nz-menu-item>
+                  <nz-timeline>
+                    <nz-timeline-item *ngFor="let work of workHistory; let i = index" [nzColor]="i === 0 ? 'green' : 'blue'">
+                      <app-work-details [work]="work"></app-work-details>
+                    </nz-timeline-item>
+                  </nz-timeline>
+                </li>
+              </ul>
+            </li> -->
+
+            <app-education [education]=education></app-education>
+            <!-- <li nz-submenu nzOpen class="submenu education" nzTitle="Education" nzIcon="profile">
+              <ul>
+                <li *ngFor="let info of education" class="education-item" nz-menu-item>
+                  <nz-layout>
+                    <nz-sider nzWidth="110px">
+                      <b>{{info.label}}</b>
+                    </nz-sider>
+                    <nz-content *ngIf="info.label !== 'Course Work'; else courseWork">
+                      <span>{{info.value}}</span>
+                    </nz-content>
+                    <ng-template #courseWork>
+                      <nz-content>
+                        <nz-tag *ngFor="let tag of info.value" [nzColor]="'processing'">
+                          <span nz-popover nzPopoverPlacement="topCenter" [nzPopoverContent]="tag">{{tag}}</span>
+                        </nz-tag>
+                      </nz-content>
+                    </ng-template>
+                  </nz-layout>
+                </li>
+              </ul>
+            </li> -->
+
+            <app-projects [projects]="projects"></app-projects>
+            <!-- <li nz-submenu nzOpen class="submenu projects" nzTitle="Projects" nzIcon="project">
+              <div class="project-table">
+                <nz-table #nzTable [nzData]="projects" nzTableLayout="fixed" [nzPageSize]="5">
+                  <thead>
+                    <tr>
+                      <th nzWidth="50px"></th>
+                      <th nzWidth="250px">Name</th>
+                      <th>Technologies</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <ng-container *ngFor="let data of nzTable.data">
+                      <tr>
+                        <td [nzExpand]="expandSet.has(data.id)" (nzExpandChange)="onExpandChange(data.id, $event)"></td>
+                        <td>{{ data.name }}</td>
+                        <td>{{ data.technologies }}</td>
+                      </tr>
+                      <tr [nzExpand]="expandSet.has(data.id)">
+                        <span class="project-desc">{{ data.description }}</span>
+                      </tr>
+                    </ng-container>
+                  </tbody>
+                </nz-table>
+              </div>
+            </li> -->
+
+            <app-certifications [certifications]="certifications"></app-certifications>
+            <!-- <li nz-submenu nzOpen class="submenu certifications" nzTitle="Certifications" nzIcon="book">
+              <ul>
+                <li nz-menu-item>
+                  <a href="https://www.youracclaim.com/badges/1ea57361-c6f4-49b2-97bf-1da0330966a0/linked_in_profile" target="_blank">
+                    Oracle Certified Professional Java SE 8 Certification
+                  </a>
+                </li>
+                <li nz-menu-item>
+                  <a href="https://www.youracclaim.com/badges/22b354c1-232a-43f5-a807-deca3360ce6c/linked_in_profile" target="_blank">
+                    Oracle Certified Associate Java SE 8 Certification
+                  </a>
+                </li>
+              </ul>
+            </li> -->
+          </ul>
+        </nz-layout>
+      </nz-content>
+    </nz-layout>
+
+  </nz-content>
+  <!-- <nz-footer>Footer</nz-footer> -->
+</nz-layout>
