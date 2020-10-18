@@ -9,7 +9,7 @@ import { NzListModule } from 'ng-zorro-antd/list';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzModalModule } from 'ng-zorro-antd/modal';
 import { NzPopoverModule } from 'ng-zorro-antd/popover';
-import { NzRateModule } from 'ng-zorro-antd/rate'
+import { NzRateModule } from 'ng-zorro-antd/rate';
 import { NzSpinModule } from 'ng-zorro-antd/spin';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzTagModule } from 'ng-zorro-antd/tag';

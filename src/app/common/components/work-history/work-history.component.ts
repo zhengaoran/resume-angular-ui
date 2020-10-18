@@ -7,7 +7,7 @@ import { Work } from '../../models/work';
   styleUrls: ['./work-history.component.scss']
 })
 export class WorkHistoryComponent implements OnInit {
-  
+
   @Input() workHistory: Work[];
 
   constructor() { }

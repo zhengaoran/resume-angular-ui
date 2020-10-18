@@ -9,13 +9,14 @@ import { ResumeService } from './services/resume.service';
   styleUrls: ['./resume.component.scss'],
 })
 export class ResumeComponent implements OnInit {
+
   // TODO: create http interceptor for spinner
-  public loading: boolean = false;
+  public loading = false;
   public resume: Resume = null;
 
   constructor(private resumeService: ResumeService) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.loading = true;
     this.resumeService.getResume().subscribe((response: Resume) => {
       this.resume = response;

@@ -10,7 +10,7 @@ export class WorkDetailsComponent implements OnInit {
 
   @Input() work: Work;
 
-  public showModal: boolean = false;
+  public showModal = false;
 
   constructor() { }
 
