@@ -1,5 +1,5 @@
 export interface Skill {
   title: string;
   icon: string;
-  skills: string[];
+  skills: { name: string; rating: number }[];
 }

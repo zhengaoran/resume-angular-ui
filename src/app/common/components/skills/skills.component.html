@@ -4,7 +4,8 @@
       <li *ngFor="let skill of category.skills" nz-menu-item>
         <nz-layout>
           <nz-content>
-            <span>{{skill}}</span>
+            <span>{{skill.name}}</span>
+            <span class="rating"><nz-rate [ngModel]="skill.rating" nzDisabled></nz-rate></span>
           </nz-content>
         </nz-layout>
       </li>

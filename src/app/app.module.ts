@@ -25,7 +25,7 @@ registerLocaleData(en);
   imports: [
     AppRoutingModule,
     BrowserAnimationsModule,
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     FormsModule,
     HttpClientModule,
     IconsProviderModule,

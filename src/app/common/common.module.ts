@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule as AngularCommonModaule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzCardModule } from 'ng-zorro-antd/card';
@@ -8,6 +9,8 @@ import { NzListModule } from 'ng-zorro-antd/list';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzModalModule } from 'ng-zorro-antd/modal';
 import { NzPopoverModule } from 'ng-zorro-antd/popover';
+import { NzRateModule } from 'ng-zorro-antd/rate'
+import { NzSpinModule } from 'ng-zorro-antd/spin';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzTagModule } from 'ng-zorro-antd/tag';
 import { NzTimelineModule } from 'ng-zorro-antd/timeline';
@@ -27,6 +30,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 @NgModule({
   imports: [
     AngularCommonModaule,
+    FormsModule,
     IconsProviderModule,
     NzButtonModule,
     NzCardModule,
@@ -35,6 +39,8 @@ import { SkillsComponent } from './components/skills/skills.component';
     NzMenuModule,
     NzModalModule,
     NzPopoverModule,
+    NzRateModule,
+    NzSpinModule,
     NzTableModule,
     NzTagModule,
     NzTimelineModule,
@@ -53,6 +59,7 @@ import { SkillsComponent } from './components/skills/skills.component';
   exports: [
     AngularCommonModaule,
     IconsProviderModule,
+    FormsModule,
     NzButtonModule,
     NzCardModule,
     NzListModule,
@@ -60,6 +67,8 @@ import { SkillsComponent } from './components/skills/skills.component';
     NzMenuModule,
     NzModalModule,
     NzPopoverModule,
+    NzRateModule,
+    NzSpinModule,
     NzTableModule,
     NzTagModule,
     NzTimelineModule,

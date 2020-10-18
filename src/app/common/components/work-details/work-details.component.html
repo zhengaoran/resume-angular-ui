@@ -1,6 +1,6 @@
 <div class="work">
   <div class="work-title" (click)="toggleModal(true)">
-    <h3>{{work.title}} ({{work.time}}) <i class="open-modal-icon" nz-icon nzType="plus-circle" nzTheme="twotone"></i>
+    <h3>{{work.title}} ({{work.time}}) <i class="open-modal-icon" nz-icon nzType="plus-circle" [nzTheme]="'twotone'"></i>
     </h3>
   </div>
   <span>{{work.company}}</span>
