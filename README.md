@@ -1,6 +1,6 @@
 # ResumeAngularUi
 
-Personal Resume Application with Angular, NG-ZORRO, and Firebase.
+[Personal Resume Application](https://aozheng-resume.web.app/resume) with Angular, NG-ZORRO, and Firebase.
 
 ## Development server
 
