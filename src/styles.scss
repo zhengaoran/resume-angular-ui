@@ -33,6 +33,10 @@
   }
 }
 
+.ant-timeline-item:first-of-type {
+  padding-top: 10px;
+}
+
 .ant-timeline-item-tail, .ant-timeline-item-head {
   margin-top: 2px;
 }
