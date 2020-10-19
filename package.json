@@ -12,7 +12,7 @@
     "serve:ssr": "node dist/resume-angular-ui/server/main.js",
     "build:ssr": "ng build --prod && ng run resume-angular-ui:server:production",
     "prerender": "ng run resume-angular-ui:prerender",
-    "start:heroku":"serve:ssr",
+    "start:heroku":"npm run serve:ssr",
     "heroku-postbuild": "npm run build:ssr"
   },
   "private": true,
