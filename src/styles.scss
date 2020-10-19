@@ -88,14 +88,14 @@
     background-color: #fff !important;
   }
 
-  .ant-spin.ant-spin-spinning  {
-    position: fixed !important;
-    top: 25% !important;
-  }
-  
   .ant-menu-item {
     .anticon-star {
       margin-right: 0px;
     }
   }
+}
+
+.ant-spin.ant-spin-spinning  {
+  position: fixed !important;
+  top: 25% !important;
 }
