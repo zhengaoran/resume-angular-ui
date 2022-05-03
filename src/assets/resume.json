@@ -1,7 +1,7 @@
 {
   "name": "Aoran Zheng",
   "position": "Software Engineer",
-  "introduction": "\tInnovative Software Engineer with over 3 years of experience in developing web applications. Proven experience developing websites using HTML, CSS and JavaScript, and seasoned expert in frontendtechnologies such as Angular and React. Built products that meet the highest standards for web design, user experience, best practices and performance. Motivated to learn, grow, and excel in Software Engineering.",
+  "introduction": "\tInnovative Software Engineer with over 4 years of experience in developing web applications. Proven experience developing websites using HTML, CSS and JavaScript, and seasoned expert in frontendtechnologies such as Angular and React. Built products that meet the highest standards for web design, user experience, best practices and performance. Motivated to learn, grow, and excel in Software Engineering.",
   "contact": [
     {
       "label": "Address",
@@ -18,9 +18,21 @@
   ],
   "workHistory": [
     {
+      "title": "Senior Software Engineer",
+      "company": "Tekion Corp",
+      "time": "2020-12 - present",
+      "details": [
+        "Developed large scalable digital retail platforms using React, utilized Next.js to achieve server side rendering for better performance and SEO ranking placement.",
+        "Leveraged Material UI and Tailwind to establish responsive design and presentation consistency across common devices and browser interfaces.",
+        "Introduced web components to create reusable custom elements that are being used across multiple web applications.",
+        "Complied with ADA Web Accessibility standards to ensure the application provides equal accessibility to all consumers.",
+        "Provided technical mentorship to junior engineers through code review and technical sessions, and worked to improve overall team performance.",
+      ]
+    },
+    {
       "title": "Software Engineer",
-      "company": "Cisco Systems / SRS Consulting Inc.",
-      "time": "2019-07 - Present",
+      "company": "Cisco Systems",
+      "time": "2019-07 - 2020-11",
       "details": [
         "Rewrote existing applications using Angular framework to improve performance, enhance visuals, and usability.",
         "Utilized Angular elements to create web components that are being used across multiple Cisco web applications.",
@@ -32,7 +44,7 @@
     },
     {
       "title": "Software Engineer",
-      "company": "Cisco Systems / OSI Engineering, Inc.",
+      "company": "Cisco Systems",
       "time": "2018-04 - 2019-07",
       "details": [
         "Optimized state management and memorization to improve application render performance for nested tree tables containing up to 100,000 records.",
